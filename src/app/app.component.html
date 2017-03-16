@@ -1,0 +1,126 @@
+<h1>
+  {{title}}
+  
+  <div class="ui top attached tabular menu" style="margin-top:10px">
+		<a class="active item red" data-tab="first">Request Table</a>
+	  	<a class="item green" data-tab="second">Metrics</a>
+	  	<a class="item blue" data-tab="third">User Management</a>
+	</div>
+	<div class="ui bottom attached active tab segment" data-tab="first">
+	  <div>
+	  	<b style="font-size: 18px;"> Reports </b>
+	  </div>
+	  <br>
+	  	<div class="ui selection dropdown" id="dropdownOptions">
+		  	
+		  	<div class="default text">Select an Item</div>
+		  	<i class="dropdown icon"></i>
+		  	<div class="menu">
+		    	<div class="item">LIC</div>
+		    	<div class="item">Jeevan Sathi</div>
+		    	<div class="item">Mutooth</div>
+		    	<div class="item">Margadarshi</div>
+		    	<div class="item">Brokerage</div>
+		  	</div>
+		</div>
+		<button type="button" class="ui primary button" (click)="getDetails()">
+		  Get Details
+		</button>
+		
+		<br/><br/>
+		<p style="display:none">{{ ajaxResult }}</p>
+
+		<table class="ui celled olive table" id="dataTab">
+		  <thead>
+		    <tr><th>Order#</th>
+		    <th>Status</th>
+		    <th>Date Placed</th>
+		    <th>Total</th>
+		  </tr></thead>
+		  <tfoot>
+            <tr>
+                <th>Order#</th>
+		    	<th>Status</th>
+		    	<th>Date Placed</th>
+		    	<th>Total</th>
+            </tr>
+          </tfoot>
+		  <tbody>
+				<!--
+		    <tr>
+		      <td>37148</td>
+		      <td>Hold</td>
+		      <td>03/09/2017</td>
+		      <td>$39.05</td>
+		    </tr>
+		    <tr>
+		     <td>1548</td>
+		      <td class="positive" >Completed</td>
+		      <td>03/09/2017</td>
+		      <td>$39.05</td>
+		    </tr>
+		    <tr>
+		      <td>0258</td>
+		      <td>Hold</td>
+		      <td>03/09/2017</td>
+		      <td>$39.05</td>
+		    </tr>
+		    <tr>
+		      <td>96853</td>
+		      <td>Hold</td>
+		      <td>03/09/2017</td>
+		      <td>$39.05</td>
+		    </tr>
+		    <tr>
+		      <td>14875</td>
+		      <td>Hold</td>
+		      <td>03/09/2017</td>
+		      <td>$39.05</td>
+		    </tr>
+		    <tr>
+		      <td>02365</td>
+		      <td>Hold</td>
+		      <td>03/09/2017</td>
+		      <td>$39.05</td>
+		    </tr>
+		    <tr>
+		      <td>22587</td>
+		      <td>Hold</td>
+		      <td>03/09/2017</td>
+		      <td>$39.05</td>
+		    </tr>
+		    <tr>
+		      <td>6885</td>
+		      <td>Hold</td>
+		      <td>03/09/2017</td>
+		      <td>$39.05</td>
+		    </tr>
+		    <tr>
+		      <td>1887</td>
+		      <td>Hold</td>
+		      <td>03/09/2017</td>
+		      <td>$39.05</td>
+		    </tr>
+		    <tr>
+		      <td>965844</td>
+		      <td>Hold</td>
+		      <td>03/09/2017</td>
+		      <td>$39.05</td>
+		    </tr>
+		    <tr>
+		      <td>2151</td>
+		      <td>Hold</td>
+		      <td>03/09/2017</td>
+		      <td>$39.05</td>
+		    </tr> -->
+		  </tbody>		  
+		</table> 
+		
+	</div>
+	<div class="ui bottom attached tab segment" data-tab="second">
+	  Metrics
+	</div>
+	<div class="ui bottom attached tab segment" data-tab="third">
+	  User Management
+	</div>
+</h1>
